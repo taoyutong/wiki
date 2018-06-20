@@ -26,8 +26,12 @@ alias tgmt = 'git commit -m "default commit"'
 但还要 git add .  和 git push , 懒人绝不多做事，重新定义别名，合并多个命令
 
 ```powershell
+
+# && 表示上一条命令执行成功后，才会执行下一条
 alias tgmt = 'git add . && git commit -m "default comment" && git push origin master'
 
 ```
 
-之后同步资料，tgmt 就ok了，完美。
+之后同步资料，输入 tgmt 就ok了，完美。
+
+alias永久化方法，google即可，一般是添加到 .bash_profile 中，再 ```source .bash_profile``` 即可
