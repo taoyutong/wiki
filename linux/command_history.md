@@ -22,3 +22,12 @@ tree -C -L 3
 alias tgmt = 'git commit -m "default commit"'
 
 ```
+
+但还要 git add .  和 git push , 懒人绝不多做事，重新定义别名，合并多个命令
+
+```powershell
+alias tgmt = 'git add . && git commit -m "default comment" && git push origin master'
+
+```
+
+之后同步资料，tgmt 就ok了，完美。
